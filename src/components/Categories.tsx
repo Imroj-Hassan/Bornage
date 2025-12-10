@@ -58,11 +58,7 @@ export default function Categories() {
           {categories.map((category) => (
             <Link key={category.name} href={category.href} className="group">
               <div
-                className="relative overflow-hidden rounded-2xl bg-gradient-to-br p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl aspect-square flex flex-col items-center justify-center text-center"
-                style={{
-                  backgroundImage: `linear-gradient(to bottom right, var(--tw-gradient-stops))`,
-                }}
-                className={`bg-gradient-to-br ${category.color}`}
+                className={`relative overflow-hidden rounded-2xl bg-gradient-to-br ${category.color} p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl aspect-square flex flex-col items-center justify-center text-center`}
               >
                 <div className="text-4xl md:text-5xl mb-3 transform group-hover:scale-110 transition-transform">
                   {category.icon}
